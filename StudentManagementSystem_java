@@ -92,6 +92,39 @@ public class Main {
                 default:
                     break;
             }
+            
+                case 5:
+                //update student record
+                    System.out.println("Enter Student Id No. : ");
+                    
+                    //id of student to be edited
+                    matricId = scanner.nextInt();
+                    
+                    //iterator used to traverse the loop in array (KIV)
+                    Iterator <Student> itr = c.iterator();
+                    while (itr.hasNext()){
+                    
+                        //object of iterator is created
+                        Student obj =itr.next();
+                        
+                        //bool to check if matricId matches
+                        if (obj.getMatricId()==matricId){
+                        
+                        //subject can be edited
+                         System.out.println("Enter Subject : ");
+                         subject = scanner.nextLine();
+                         obj.setSubject(subject);
+                         
+                        //student grade can be edited
+                         System.out.println("Enter Student Grade : ");
+                         grade = scanner.nextDouble();
+                         obj.setGrade(grade);
+                         break;
+                        }
+                        
+                    }
+                    break;
+                    
 
         }while(choice!=0);
     }
