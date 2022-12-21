@@ -1,0 +1,5 @@
+class schoolRegstr {
+public static void main(string[] args){
+  System.out.println("This is the file! Hurray you found it!")
+  }
+}
