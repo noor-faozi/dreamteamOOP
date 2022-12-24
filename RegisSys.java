@@ -16,7 +16,7 @@ class Student{
         this.course = course;
         this.gender = gender;
     }
-    //Creating setters and getters
+    //Creating getters
   
     public String getName() {
         return name;
